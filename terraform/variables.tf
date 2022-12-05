@@ -9,3 +9,7 @@ variable folder_id {
 variable zone {
   description = "zone"
 }
+
+variable zone_list {
+  description = ""
+}
