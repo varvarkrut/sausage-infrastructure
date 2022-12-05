@@ -25,6 +25,3 @@
   date; echo 'completed'
  endscript
 }
-
-if isinstance(variable, int) and variable < 0:
-    second_list.append(variable)
