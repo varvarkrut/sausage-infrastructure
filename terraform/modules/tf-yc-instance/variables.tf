@@ -21,3 +21,9 @@ variable memory {
   type = number
   default = 2
 }
+
+variable subnet_id {
+  description = "Subnet id"
+  type = string
+  default = ""
+}

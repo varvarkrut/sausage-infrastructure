@@ -27,7 +27,7 @@ module "tf-yc-network" {
 #подключаем модуль виртуальных машин
 module "tf-yc-instance" {
   source = "./modules/tf-yc-instance"
-  vm_name = "chapter5-lesson02-shkurko"
+  zone = var.zone
 
 #автоматически определяем id подсети на основе зоны
   subnet_id = "${module.tf-yc-network.yandex_vpc_subnet.id}"

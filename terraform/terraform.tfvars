@@ -9,3 +9,4 @@ folder_id = {
 zone = {
   zone = "ru-central1-a"
 }
+
