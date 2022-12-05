@@ -1,5 +1,5 @@
 resource "yandex_compute_instance" "vm-1" {
-    name = "chapter5-lesson2-shkurko"
+    name = "chapter5-lesson2-shkurko01"
     zone = var.zone
     platform_id = var.platform_id
     resources {
