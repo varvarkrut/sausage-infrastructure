@@ -10,6 +10,6 @@ variable zone {
   description = "zone"
 }
 
-variable zone_list {
-  description = ""
+variable image_id {
+  description = "image id"
 }
