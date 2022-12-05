@@ -8,4 +8,5 @@ variable folder_id {
 
 variable zone {
   description = "zone"
+  zone = "ru-central1-a"
 }
