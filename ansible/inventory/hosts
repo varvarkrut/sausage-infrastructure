@@ -1,4 +1,0 @@
-[backend]
-backend-vm ansible_host=10.129.0.8
-[frontend]
-frontend-vm ansible_host=10.129.0.8
