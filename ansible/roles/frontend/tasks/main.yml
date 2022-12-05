@@ -1,3 +1,8 @@
+- name: Collect selected facts
+  setup:
+    filter:
+      - 'ansible_distribution_release'
+
 - name: Install GPG key for NodeJS
   apt_key:
     url: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
