@@ -13,3 +13,7 @@ variable zone {
 variable image_id {
   description = "image id"
 }
+
+variable token {
+  description = "Token"
+}
