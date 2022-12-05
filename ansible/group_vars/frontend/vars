@@ -1,6 +1,6 @@
 frontend_version: 1.0.294047
-frontend_service_user: front-user
-frontend_service_group: front-user
+frontend_service_user: ansible
+frontend_service_group: ansible
 frontend_directory: /var/www-data
 frontend_nexus_url: https://nexus.praktikum-services.ru/repository/10-sausage-store-shkurko-ivan-frontend/sausage-store
 nodejs_keyring: /usr/share/keyrings/nodesource.gpg
