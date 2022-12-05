@@ -16,7 +16,7 @@ resource "yandex_compute_instance" "vm-1" {
     }
 
     network_interface {
-        subnet_id = "e9bg8cjovk4tpbk8h6m7"
+        subnet_id = var.subnet_id
         nat       = false
     }
 
