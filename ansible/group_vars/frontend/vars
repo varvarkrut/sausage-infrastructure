@@ -1,4 +1,4 @@
-frontend_version: 1.0.120037
+frontend_version: 1.0.294047
 frontend_service_user: front-user
 frontend_service_group: front-user
 frontend_directory: /var/www-data
