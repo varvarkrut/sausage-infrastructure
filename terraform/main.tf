@@ -10,3 +10,8 @@ module "tf-yc-instance" {
 #автоматически определяем id подсети на основе зоны
   subnet_id = module.tf-yc-network.yandex_vpc_subnet["${module.tf-yc-instance.choosed_zone}"].subnet_id
 }
+
+output "ip_address" {
+    value = module.tf-yc-instance.ip_address
+
+}
