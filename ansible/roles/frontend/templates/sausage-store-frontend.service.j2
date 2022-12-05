@@ -5,7 +5,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/lib/node_modules/http-server/bin/http-server {{ frontend_directory }} -p 8080 --proxy http://51.250.97.176:8080
+ExecStart=/lib/node_modules/http-server/bin/http-server {{ frontend_directory }} -p 80 --proxy http://localhost:8080
 User={{ frontend_service_user }}
 StandardOutput=append:{{ log_directory }}/sausage-store-frontend.log
 StandardError=append:{{ log_directory }}/sausage-store-frontend.log
