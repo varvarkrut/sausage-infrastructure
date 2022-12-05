@@ -17,7 +17,7 @@ resource "yandex_compute_instance" "vm-1" {
 
     network_interface {
         subnet_id = var.subnet_id
-        nat       = false
+        nat       = true
     }
 
     metadata = {
