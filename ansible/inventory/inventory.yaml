@@ -5,5 +5,4 @@ all: # Все серверы в нашем inventory, all - обязателен
         10.129.0.8:
     frontend:
       hosts:
-        sausage-frontend.example.com:
           10.129.0.8:
