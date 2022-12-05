@@ -31,5 +31,4 @@ variable subnet_id {
 variable image_id {
   description = "Image id"
   type = string
-  default = ""
 }
