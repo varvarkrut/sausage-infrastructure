@@ -1,0 +1,17 @@
+- name: Deploy backend
+  hosts: backend
+  gather_facts: false
+  roles:
+    - backend
+  tags:
+    - backend
+    - deploy
+
+- name: Deploy frontend
+  hosts: frontend
+  gather_facts: false
+  roles:
+    - frontend
+  tags:
+    - frontend
+    - deploy

@@ -1,0 +1,6 @@
+backend_maven_version: 1.0.294048
+backend_service_user: ansible
+backend_service_group: ansible
+backend_report_directory: /opt/sausage-store/reports
+backend_lib_directory: /opt/sausage-store/lib
+backend_nexus_url: https://nexus.praktikum-services.ru/repository/10-sausage-store-shkurko-ivan-backend-release/
