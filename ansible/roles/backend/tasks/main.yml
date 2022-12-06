@@ -1,4 +1,6 @@
 # tasks file for backend
+- name: Wait for target connection to become reachable/usable
+  wait_for_connection:
 
 - name: Install openjdk and python
   apt:
