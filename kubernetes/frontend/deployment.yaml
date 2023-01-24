@@ -34,10 +34,6 @@ spec:
           ports:
             - name: backend
               containerPort: 8080
-          livenessProbe:
-            httpGet:
-              path: /actuator/health
-              port: 8080
             initialDelaySeconds: 15
             periodSeconds: 30
             timeoutSeconds: 1
