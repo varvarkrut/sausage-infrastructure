@@ -32,7 +32,7 @@ spec:
                   name: vault
                   key: vault_token
           ports:
-            - name: backend
+            - name: frontend
               containerPort: 8080
       imagePullSecrets:
         - name: docker-config-secret
