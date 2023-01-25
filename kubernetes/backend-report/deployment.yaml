@@ -23,6 +23,8 @@ spec:
           env:
             - name: VAULT_URL
               value: 84.201.130.88
+            - name: PORT
+              value: 8080
             - name: VAULT_TOKEN
               valueFrom:
                 secretKeyRef:
