@@ -6,6 +6,7 @@ metadata:
   labels:
     app: backend-report
 spec:
+  revisionHistoryLimit: 15
   replicas: 1
   selector:
     matchLabels:
@@ -17,13 +18,11 @@ spec:
     spec:
       containers:
         - name: backend-report
-          image: gitlab.praktikum-services.ru:5050/std-009-057/sausage-store/sausage-backend-report:latest
+          image: gitlab.praktikum-services.ru:5050/d.pashkov/sausage-store/sausage-backend-report:latest
           imagePullPolicy: IfNotPresent
           env:
-            - name: PORT
-              value: 8001
             - name: VAULT_URL
-              value: 84.201.130.88
+              value: 51.250.67.183
             - name: VAULT_TOKEN
               valueFrom:
                 secretKeyRef:
