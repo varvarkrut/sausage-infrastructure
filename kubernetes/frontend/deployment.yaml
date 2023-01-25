@@ -22,17 +22,15 @@ spec:
       containers:
         - name: frontend
           image: gitlab.praktikum-services.ru:5050/std-009-057/sausage-store/sausage-frontend:latest
-          imagePullPolicy: IfNotPresent
-          env:
-            - name: VAULT_HOST
-              value: 84.201.130.88
-            - name: VAULT_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: vault
-                  key: vault_token
           ports:
             - name: frontend
               containerPort: 8080
+          volumeMounts:
+          - name: nginx-conf
+            mountPath: /etc/nginx/conf.d/
+      volumes:
+      - name: nginx-conf
+        configMap:
+          name: nginx-conf
       imagePullSecrets:
         - name: docker-config-secret
