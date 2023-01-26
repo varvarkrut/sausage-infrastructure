@@ -21,6 +21,8 @@ spec:
           image: gitlab.praktikum-services.ru:5050/std-009-057/sausage-store/sausage-backend-report:latest
           imagePullPolicy: IfNotPresent
           env:
+            - name: DB
+              value: "mongodb://vanyashcurko:Testusr1234@rc1b-i501k9ruzubovb2x.mdb.yandexcloud.net:27018/vanyashcurko?tls=true"
             - name: PORT
               value: "8001"
             - name: VAULT_URL
