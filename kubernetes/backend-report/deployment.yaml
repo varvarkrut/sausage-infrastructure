@@ -23,7 +23,7 @@ spec:
           env:
             - name: PORT
               value: "8001"
-            - name: VAULT_URL
+            - name: VAULT_HOST
               value: 84.201.130.88
             - name: VAULT_TOKEN
               valueFrom:
