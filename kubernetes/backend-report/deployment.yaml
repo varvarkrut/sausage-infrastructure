@@ -19,7 +19,7 @@ spec:
       containers:
         - name: backend-report
           image: gitlab.praktikum-services.ru:5050/std-009-057/sausage-store/sausage-backend-report:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           env:
             - name: PORT
               value: "8001"
