@@ -16,10 +16,10 @@ spec:
         app: {{ .Chart.Name }}
     spec:
       containers:
-      — name: nginx
+      - name: nginx
         image: "{{ .Values.image.repository }}:{{.Values.image.tag }}"
         imagePullPolicy: {{ .Values.imagePullPolicy }}
         ports:
-          — containerPort: {{.Values.service.port }}
+          - containerPort: {{.Values.service.port }}
         resources:
 {{ toYaml .Values.resources | indent 10 }}
