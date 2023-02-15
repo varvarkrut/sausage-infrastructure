@@ -1,7 +1,7 @@
 global:
   environment: production
   revisionHistoryLimit: 15
-  vault_token: bXlyb290Nzc3
+  vault_token: aHZzLkNBRVNJT1hOU21PZ3ZuRXMzT0xFbnNxbERac3Q2NnBsTWpPNm83ZE1pcVJnamZrYUdoNEtIR2gyY3k1a2ExaGtVRlZxZWsxUmQxRmxVV1ZSV0hOSlJIcDZiMm8=
   dockerconfigjson: ewogICAgICAgICJhdXRocyI6IHsKICAgICAgICAgICAgICAgICJnaXRsYWIucHJha3Rpa3VtLXNlcnZpY2VzLnJ1OjUwNTAiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJhdXRoIjogIlpDNXdZWE5vYTI5Mk9paGtOalJZZGxjbENnPT0iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgfQo=
   proxy_pass_Name: backend
   proxy_pass_Port: 8080
@@ -32,7 +32,7 @@ backend:
     imagePullPolicy: Always
   env:
     - name: VAULT_URL
-      value: 51.250.67.183
+      value: 84.201.130.88
 
 backend-report:
   replicaCount: 1
@@ -45,7 +45,7 @@ backend-report:
     imagePullPolicy: Always
   env:
     - name: VAULT_URL
-      value: 51.250.67.183
+      value: 84.201.130.88
   request:
     cpu: 100m
   limits:
